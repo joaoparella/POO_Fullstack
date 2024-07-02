@@ -15,7 +15,7 @@ var senha = EntradaSaida.entrada("Digite uma senha")
 var resultado = usuarioJoao.fazerLogin(email,senha)
 
 EntradaSaida.mensagemCompleta(resultado)
-EntradaSaida.mensagemCompleta("testando mensagem completa")
+
 EntradaSaida.mensagemCompleta(usuarioJoao.validarAssinatura())
 usuarioJoao.assinatura = 100
 usuarioJoao.adicionarAssinatura(10)
