@@ -4,7 +4,7 @@ class Datas{
         this.moment = require('moment');
     }
     diferencaDias(data){
-        return diferenca = data.diff(this.DataAtual(), 'days')
+        return data.diff(this.dataAtual(), 'days')
     }
     adicionarDias(data,dias){
         return data.add(dias,'days')
