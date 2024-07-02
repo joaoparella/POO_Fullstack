@@ -1,9 +1,20 @@
 class Usuario{
     constructor (nome,email,senha){
+        this.datas = new (require('./datas.js'))()
+
         this.nome = nome;
         this.email = email;
         this.senha = senha;
-        this.assinatura = 0;
+        this.assinatura = this.datas.dataAtual();
+    }
+    validarAssinatura(){
+        return "Voce tem "+this.datas.diferencaDias(this.assinatura)+" dias de assinatura"
+    }
+    retornaAssinatura(){
+        return this.datas.formataData(this.assinatura)
+    }
+    adicionarAssinatura(dias){
+        this.assinatura = this.datas.adicionarDias(this.assinatura,dias);
     }
 
     fazerLogin(email, senha){
@@ -16,14 +27,6 @@ class Usuario{
         }else{
             return "email invalido"
         }
-    }
-
-    validarAssinatura(){
-        return "Voce tem "+this.assinatura+" dias de assinatura"
-    }
-
-    adicionarAssinatura(dias){
-        this.assinatura = this.assinatura + dias;
     }
 }
 

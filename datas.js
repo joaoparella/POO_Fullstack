@@ -1,5 +1,6 @@
 class Datas{
     constructor(){
+        //
         this.moment = require('moment');
     }
     diferencaDias(data){

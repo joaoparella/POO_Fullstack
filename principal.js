@@ -1,7 +1,7 @@
 const Usuario = require('./Usuario.js')
-const entradaSaida = require('./EntradaSaida.js')
+const EntradaSaida = new (require('./EntradaSaida.js'))()
 const Datas = new (require('./datas.js'))()
-const EntradaSaida = new entradaSaida();
+
 
 const usuarioJoao = new Usuario("joao", "joao@teste.com", "123");
 
