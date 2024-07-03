@@ -4,7 +4,7 @@ import { funcoesES } from './EntradaSaida.js';
 const EntradaSaida = new funcoesES()
 
 
-const usuarioJoao = new Usuario("joao", "joao@teste.com", "123");
+const usuarioJoao = new Usuario("joaoasdasdsad", "joao@teste.com", "123");
 
 
 var email = EntradaSaida.entrada("Digite um email")
