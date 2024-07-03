@@ -1,6 +1,7 @@
-class funcoesES{
+import prompt from 'prompt-sync'; 
+export class funcoesES{
     constructor(){
-        this.prompt = require('prompt-sync')();
+        this.prompt = prompt();
     }
     entrada(mensagem){
         return this.prompt(mensagem+": ");
@@ -14,4 +15,3 @@ class funcoesES{
         console.log("********************************");
     }
 }
-module.exports = funcoesES;

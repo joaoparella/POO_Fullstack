@@ -5,7 +5,7 @@
   },
   "name": "projetostream",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "main": "EntradaSaida.js",
   "devDependencies": {},
   "scripts": {

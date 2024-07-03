@@ -1,7 +1,8 @@
-class Datas{
+import moment from 'moment';
+
+
+export class Datas{
     constructor(){
-        //
-        this.moment = require('moment');
     }
     diferencaDias(data){
         return data.diff(this.dataAtual(), 'days')
@@ -16,7 +17,6 @@ class Datas{
         return data.format("DD/MM/YYYY");
     }
     dataAtual(){
-        return this.moment()
+        return moment()
     }
 }
-module.exports = Datas;
