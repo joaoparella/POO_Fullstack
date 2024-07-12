@@ -1,4 +1,4 @@
-import filme from "./filme";
+import filme from "./filme.js";
 
 
 export default class serie extends filme{
@@ -11,12 +11,12 @@ export default class serie extends filme{
 
     compartilhar(){
         return "Estou assistindo o episódio " + this.episodio + " da temporada "+this.temporada+" da serie"+this.nomeSerie+
-         " que conta a seguinte história: "+super.sinopse+ ", foi lançado em "+super.ano+" e tem duração de "
-         +super.duracao+" minutos. Assista também!!";
+         " que conta a seguinte história: "+this.sinopse+ ", foi lançado em "+this.ano+" e tem duração de "
+         +this.duracao+" minutos. Assista também!!";
     }
 
     assistir(){
         return "Assistindo o episódio " + this.episodio + " da temporada "+this.temporada+
-        " da serie"+this.nomeSerie+" - Tempo restante -> "+super.duracao +" minutos."
+        " da serie"+this.nomeSerie+" - Tempo restante -> "+this.duracao +" minutos."
     }
 }
